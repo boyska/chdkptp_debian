@@ -1,0 +1,12 @@
+Package: chdk
+Version: 1.0
+Section: BASE
+Priority: OPTIONAL
+Architecture: amd64
+Depends: lua5.2, liblua5.2-0
+Maintainer:  tony y alonso
+Description: AQUÍ VA LA DESCRIPCIÓN
+ SIEMPRE VA A VER UN ESPACIO EN LA ANTES DE UNA LINEA
+
+
+
