@@ -1,0 +1,12 @@
+Source: chdkptp
+Maintainer: Melvin y Tony
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9)
+
+Package: chdkptp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: conectar a camara
+ prueba para empaquetar
