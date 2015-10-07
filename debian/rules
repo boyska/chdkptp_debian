@@ -2,5 +2,14 @@
 %:
 	dh $@
 
+override_dh_clean:
+	dh_clean
+	rm -f config.mk
+	rm -rf .dep
+	rm -rf lfs/.dep
+
+override_dh_auto_configure:
+	ln -s config-sample-linux.mk config.mk
+
 override_dh_auto_install:
 	$(MAKE) DESTDIR=$$(pwd)/debian/chdkptp prefix=/usr install

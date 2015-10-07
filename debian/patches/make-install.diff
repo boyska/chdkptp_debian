@@ -1,20 +1,20 @@
 --- a/include.mk
 +++ b/include.mk
-@@ -2,6 +2,9 @@
- #
+@@ -3,6 +3,10 @@
  # build-time configuration should be done in config.mk
  # see the config-sameple*.mk files for examples
+ 
 +prefix = usr/local
 +bindir = $(prefix)/bin
 +sharedir = $(prefix)/share
- 
++
  HOSTPLATFORM:=$(patsubst MINGW%,MINGW,$(shell uname -s))
  ifeq ($(HOSTPLATFORM),MINGW)
-@@ -117,3 +120,7 @@
+ OSTYPE=Windows
+@@ -117,3 +121,6 @@
  		$(MAKE) -C $$i FOLDER="$(FOLDER)$$i/" cleand || exit 1; \
  	done
  
 +install: all
-+	install chdkptp $(DESTDIR)$(sharedir)/chdkptp
-+	install chdkptp.sh $(DESTDIR)$(bindir)/
++	install chdkptp $(DESTDIR)$(bindir)/
 +	cp -r lua $(DESTDIR)$(sharedir)/chdkptp/

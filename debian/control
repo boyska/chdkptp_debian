@@ -3,10 +3,11 @@ Maintainer: Melvin y Tony
 Section: misc
 Priority: optional
 Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 9), liblua5.2-dev, libusb-dev
 
 Package: chdkptp
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: conectar a camara
- prueba para empaquetar
+Description: Tools to connect to a CHDK-modified Canon Camera
+ This package includes lua libraries to control your
+ camera from computer
