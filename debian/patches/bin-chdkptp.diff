@@ -1,0 +1,6 @@
+--- /dev/null
++++ b/chdkptp.sh
+@@ -0,0 +1,3 @@
++#!/bin/sh
++export LUA_PATH=';;/usr/share/chdkptp/lua/?.lua'
++exec /usr/share/chdkptp/chdkptp
