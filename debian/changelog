@@ -1,3 +1,9 @@
+chdkptp (674-2) insomnia-jessie; urgency=medium
+
+  * fix lua_path for chdkptp executable 
+
+ -- boyska <piuttosto@logorroici.org>  Mon, 12 Oct 2015 15:44:13 +0200
+
 chdkptp (674-1) UNRELEASED; urgency=medium
 
   * Initial release. (Closes: #XXXXXX)
